@@ -7,10 +7,7 @@ from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 from .models import UserProfile, Wallet
 from .serializers import UserSerializer, UserProfileSerializer, WalletSerializer
-
-# User Registration View
 from rest_framework.views import APIView
-from rest_framework import serializers
 
 class UserRegistrationAPIView(APIView):
     def post(self, request):
